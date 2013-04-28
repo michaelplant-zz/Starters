@@ -1,0 +1,116 @@
+
+// NORMALIZE
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,button,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    outline:0;
+    font-size:100%;
+    font-family:inherit;
+    margin:0;
+    padding:0;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input,select,textarea {
+    font-size:100%;
+    font-family:inherit;
+    outline: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+form label {
+    cursor:pointer;
+}
+
+em{
+    font-style:italic;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+    font-weight:700;
+}
+
+p {
+    display: none;
+
+    span {
+        display: none;
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media only screen 
+    and (min-width: 320px) 
+    and (min-height: 480px) 
+    and (max-width: 384px)
+    and (max-height: 640px) {
+
+  /* Mobile Phones - Portrait */
+    #mobile { display: block }
+    #portrait { display: block }
+
+}
+
+@media only screen 
+    and (min-width: 480px) 
+    and (min-height: 320px) 
+    and (max-width: 640px)
+    and (max-height: 384px) {
+
+  /* Mobile Phones - Landscape */
+  #mobile { display: block }
+  #landscape { display: block }
+
+}
+
+@media only screen 
+    and (min-width: 384px) 
+    and (min-height: 640px) 
+    and (max-width: 540px)
+    and (max-height: 960px) {
+
+  /* LARGE Mobile Phones - Portrait */
+    #mobile { display: block }
+    #portrait { display: block }
+    #mobile .large { display: inline }
+
+}
+
+@media only screen 
+    and (min-width: 640px) 
+    and (min-height: 384px) 
+    and (max-width: 960px)
+    and (max-height: 540px) {
+
+  /* LARGE Mobile Phones - Landscape */
+  #mobile { display: block }
+  #landscape { display: block }
+    #mobile .large { display: inline }
+
+}
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+  // iPhone 5 or iPod Touch 5th generation styles 
+  #iphone5 { display: block }
+
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* High resolution stuff here */
+    #hd { display: block }
+
+}
+
