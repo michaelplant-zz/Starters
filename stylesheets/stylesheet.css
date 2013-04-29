@@ -432,6 +432,13 @@ Small Device Styles
 
 
 
+p {
+    display: none;
+
+    span {
+        display: none;
+    }
+}
 
 // MEDIA QUERIES
 
